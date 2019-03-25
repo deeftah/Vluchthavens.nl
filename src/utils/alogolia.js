@@ -1,6 +1,6 @@
 import algoliasearch from 'algoliasearch'
 
-const client = algoliasearch('A8JDD1DDSB', '06c4bcc6e1b48e0fa133cc97f1180be4')
+const client = algoliasearch('DU7ET53YZ6', '556cf8e9361a5e242e06587c72521e65')
 
 const index = client.initIndex('all_airports')
 
