@@ -4,7 +4,7 @@ import { Subtitle, Section, Text, Button } from '../Elements'
 export default ({ airports, onClick }) => {
   return (
     <div style={{ gridColumn: '1 / 3' }}>
-      <Subtitle>Other close airports</Subtitle>
+      <Subtitle>Andere vluchthavens in de buurt</Subtitle>
       <Section style={{ padding: 0 }}>
         {airports.map(a => {
           const distance = (a._rankingInfo.geoDistance / 1000).toFixed(1)
