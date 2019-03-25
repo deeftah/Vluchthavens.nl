@@ -19,12 +19,11 @@ const AutocompleteStyles = {
 export default ({ onSelect }) => {
   return (
     <>
-      <H1> Your closest airport</H1>
+      <H1> Dichtsbijzijnde vluchthaven:</H1>
       <Autocomplete
-        // Component defaults to cities only and I want everything
         types={null}
         style={AutocompleteStyles}
-        placeholder="Set Your Location"
+        placeholder="Locatie invoeren"
         onPlaceSelected={place =>
           place.geometry &&
           onSelect({
@@ -33,7 +32,7 @@ export default ({ onSelect }) => {
           })
         }
       />
-      <img src={header} width="100%" alt="Landscape of city" />
+      <img src={header} width="100%" alt="Vluchthavens.nl" />
     </>
   )
 }
